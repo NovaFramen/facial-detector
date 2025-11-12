@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Detector de Verdad IA 😏</title>
+  <style>
+    body { font-family: Arial; text-align: center; background: #f8f8f8; }
+    .container { margin-top: 50px; }
+    img { max-width: 300px; border-radius: 10px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Sube una foto y ve lo que la IA "cree" 😄</h2>
+    <form method="POST" enctype="multipart/form-data">
+      <input type="file" name="image" required><br><br>
+      <button type="submit">Analizar</button>
+    </form>
+    {% if result %}
+      <p><strong>{{ result }}</strong></p>
+      <img src="{{ img_path }}">
+    {% endif %}
+  </div>
+</body>
+</html>

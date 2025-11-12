@@ -1,0 +1,4 @@
+flask
+deepface
+tensorflow
+opencv-python
